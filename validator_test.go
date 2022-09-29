@@ -18,7 +18,6 @@ func TestValidateMetricSuccess(t *testing.T) {
 	f(`foo{bar="baz", x="y\"z"}`)
 	f(`foo{bar="b}az"}`)
 	f(`:foo:bar{bar="a",baz="b"}`)
-	f(`some.foo{bar="baz"}`)
 }
 
 func TestValidateMetricError(t *testing.T) {
